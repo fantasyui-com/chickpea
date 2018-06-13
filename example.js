@@ -1,21 +1,6 @@
-# chickpea
-A little bean for parsing command line arguments without any surprises, at all.
-
-
-## Install
-
-```bash
-
-npm i chickpea
-
-```
-
-## Usage
-```JavaScript
-
 #!/usr/bin/env node
 
-const chickpea = require('chickpea');
+const chickpea = require('./index.js');
 
 const pizzaOrder = chickpea({
 
@@ -30,13 +15,3 @@ const pizzaOrder = chickpea({
 
 console.log('Cheese Type', pizzaOrder.cheese);
 console.log('BBQ Sauce:', pizzaOrder.bbqSauce?'yes':'no');
-
-```
-
-### Execute
-
-```bash
-
-$ ./example.js --cheese "Super Stinky" --bbq-sauce
-
-```

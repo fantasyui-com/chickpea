@@ -40,7 +40,7 @@ module.exports = function(input){
       const help = input[key];
       const data = isFlag?"":" [text]";
       const initialize = [`-${short},`, `--${long}`, data].join('');
-      console.log('%s: %s', initialize, help)
+      // console.log('%s: %s', initialize, help)
       program = program.option(initialize, help);
     })
 

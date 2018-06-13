@@ -1,7 +1,10 @@
 const assert = require('assert');
 const chickpea = require('./index.js');
 
-let response = chickpea({
+process.argv.push('--cheese');
+process.argv.push('gorgonzola');
+
+const input = {
 
   pepper_flag: 'Add peppers.',
   pineapple_flag: 'Add pineapple.',
@@ -10,6 +13,17 @@ let response = chickpea({
   firstName: 'First name.',
   lastName: 'Last name.',
 
-})
+};
 
-console.log(response)
+const actual = chickpea(input);
+
+const expected = {
+  pepper: undefined,
+  pineapple: undefined,
+  bbqSauce: undefined,
+  cheese: 'gorgonzola',
+  firstName: undefined,
+  lastName: undefined
+};
+
+assert.deepEqual( actual , expected );
