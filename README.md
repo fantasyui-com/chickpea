@@ -49,3 +49,26 @@ Cheese Type: Super Stinky
 BBQ Sauce: yes
 
 ```
+
+### Extras
+
+When executing with ```-h``` flag you get the following
+
+```bash
+$ ./example.js -h
+
+
+  Usage: example [options]
+
+  Options:
+
+    -V, --version           output the version number
+    -p,--pepper             Add peppers.
+    -i,--pineapple          Add pineapple.
+    -b,--bbq-sauce          Add bbq sauce.
+    -c,--cheese [text]      Add the specified type of cheese: --cheese gorgonzola
+    -f,--first-name [text]  First name.
+    -l,--last-name [text]   Last name.
+    -h, --help              output usage information
+
+```
