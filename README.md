@@ -28,7 +28,7 @@ const pizzaOrder = chickpea({
 
 });
 
-console.log('Cheese Type', pizzaOrder.cheese);
+console.log('Cheese Type:', pizzaOrder.cheese);
 console.log('BBQ Sauce:', pizzaOrder.bbqSauce?'yes':'no');
 
 ```
@@ -38,5 +38,14 @@ console.log('BBQ Sauce:', pizzaOrder.bbqSauce?'yes':'no');
 ```bash
 
 $ ./example.js --cheese "Super Stinky" --bbq-sauce
+
+```
+
+### Result
+
+```
+
+Cheese Type: Super Stinky
+BBQ Sauce: yes
 
 ```

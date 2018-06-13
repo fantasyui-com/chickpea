@@ -13,5 +13,5 @@ const pizzaOrder = chickpea({
 
 });
 
-console.log('Cheese Type', pizzaOrder.cheese);
+console.log('Cheese Type:', pizzaOrder.cheese);
 console.log('BBQ Sauce:', pizzaOrder.bbqSauce?'yes':'no');
