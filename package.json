@@ -1,6 +1,6 @@
 {
   "name": "chickpea",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "A little bean for parsing command line arguments without any surprises, at all.",
   "main": "index.js",
   "scripts": {
